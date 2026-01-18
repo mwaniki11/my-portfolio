@@ -5,11 +5,13 @@
     <meta name="description" content="Contact Desmond Mwaniki">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Desmond Mwaniki</title>
+
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
 </head>
 <body>
 
-<header>
+<header class="glass">
     <h1>Contact Me</h1>
     <nav>
         <a href="index.html">Home</a>
@@ -19,9 +21,14 @@
     </nav>
 </header>
 
-<section class="content">
-    <p>Email: <strong>your-email@example.com</strong></p>
-    <p>Let’s work together and build something great!</p>
+<section class="content fade-in">
+    <form class="contact-form" id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p class="form-message"></p>
+    </form>
 </section>
 
 <footer>

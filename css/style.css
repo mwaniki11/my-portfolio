@@ -1,33 +1,41 @@
+:root {
+    --primary: #00c6ff;
+    --secondary: #0072ff;
+    --dark: #0f2027;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Segoe UI", sans-serif;
 }
 
 body {
-    line-height: 1.6;
-    background: #f9f9f9;
-    color: #333;
+    background: linear-gradient(135deg, var(--dark), #203a43, #2c5364);
+    color: #fff;
+    min-height: 100vh;
 }
 
 header {
-    background: #111;
-    color: #fff;
     padding: 1rem;
     text-align: center;
+}
+
+.glass {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
 }
 
 nav a {
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
-    font-weight: bold;
 }
 
 nav a:hover,
 nav a.active {
-    color: #00bcd4;
+    color: var(--primary);
 }
 
 .hero {
@@ -43,30 +51,28 @@ nav a.active {
     max-width: 100%;
     width: 400px;
     border-radius: 10px;
-    margin-right: 20px;
+}
+
+.hero-text {
+    flex: 1;
 }
 
 .btn {
-    display: inline-block;
-    margin-top: 1rem;
-    background: #00bcd4;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
     color: #fff;
     padding: 10px 20px;
+    border-radius: 30px;
     text-decoration: none;
-    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
 }
 
 .content, .projects {
     max-width: 900px;
     margin: auto;
     padding: 2rem;
-}
-
-.content img {
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 1rem;
-    border-radius: 10px;
 }
 
 .projects {
@@ -76,28 +82,45 @@ nav a.active {
 }
 
 .card {
-    background: #fff;
+    background: rgba(255,255,255,0.1);
     padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 15px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background: #111;
-    color: #fff;
-    margin-top: 2rem;
 }
 
-/* Responsive Design */
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
         text-align: center;
-    }
-
-    .hero img {
-        margin: 0 0 20px 0;
     }
 }
