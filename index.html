@@ -1,43 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Desmond Mwaniki - IT Student & Web Developer Portfolio">
-    <meta name="keywords" content="Web Developer, IT Student, Desmond Mwaniki">
-    <meta name="author" content="Desmond Mwaniki">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desmond Mwaniki | Web Developer</title>
-
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/script.js"></script>
+  <meta charset="UTF-8" />
+  <title>Desmond Mwaniki | IT Innovator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<header class="glass">
-    <h1 class="logo">Desmond Mwaniki</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+<!-- ================= NAVIGATION ================= -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">DM</div>
 
-<section class="hero fade-in">
-    <div class="hero-text">
-        <h2>Hi, I'm Desmond 👋</h2>
-        <p>
-            A passionate IT student and web developer who loves building
-            modern, responsive websites and exploring new technologies.
-        </p>
-        <a href="projects.html" class="btn pulse">View My Work</a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
     </div>
-    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Web Development">
+
+    <a href="#contact" class="nav-cta">Hire Me</a>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <div class="profile-wrapper">
+      <div class="profile-frame">
+        <img src="profile.jpg.jpeg" alt="Desmond Mwaniki" class="profile-image" />
+      </div>
+    </div>
+
+    <div class="hero-text">
+      <p class="hero-subtitle">Future Tech Innovator</p>
+      <h1 class="hero-title gradient-text">Desmond Mwaniki</h1>
+      <p class="hero-tagline">
+        Building modern digital experiences through code, creativity, and innovation.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#services" class="btn-primary">My Services</a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-mouse">
+      <div class="scroll-dot"></div>
+    </div>
+  </div>
 </section>
 
-<footer>
-    <p>© 2026 Desmond Mwaniki</p>
+<!-- ================= ABOUT ================= -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-subtitle">About Me</p>
+      <h2 class="section-title">Who I Am</h2>
+    </div>
+
+    <div class="about-card glass-card">
+      <p>
+        I am an <span class="highlight">Information Technology student</span> with a strong
+        passion for web development, driven by a desire to design and build modern,
+        user-friendly digital experiences.
+      </p>
+      <p>
+        I am skilled in programming languages such as
+        <span class="highlight">C, C++, and JavaScript</span>. Beyond the web, I have a deep
+        interest in <span class="highlight">game development</span> and
+        <span class="highlight">artificial intelligence</span>.
+      </p>
+      <p>
+        I am motivated by the challenge of turning ideas into
+        <span class="highlight">interactive, intelligent, and scalable solutions</span>
+        that deliver real-world impact.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="services-section" id="services">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-subtitle">What I Do</p>
+      <h2 class="section-title">My Services</h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card glass-card">
+        <div class="service-icon">💻</div>
+        <div>
+          <h3>Web Development</h3>
+          <p>
+            Designing and developing modern, responsive, and high-performance websites
+            with clean UI, animations, and scalable architecture.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-card glass-card">
+        <div class="service-icon">🎮</div>
+        <div>
+          <h3>Game Development</h3>
+          <p>
+            Creating engaging game logic, mechanics, and interactive experiences
+            where creativity meets programming logic.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-card glass-card">
+        <div class="service-icon">🧪</div>
+        <div>
+          <h3>Game Testing</h3>
+          <p>
+            Identifying bugs, testing gameplay mechanics, improving performance,
+            and ensuring smooth player experience.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-card glass-card">
+        <div class="service-icon">🛠️</div>
+        <div>
+          <h3>Computer Hardware Repair & Maintenance</h3>
+          <p>
+            Diagnosing, repairing, upgrading, and maintaining computer systems
+            to ensure reliability and optimal performance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-subtitle">Get In Touch</p>
+      <h2 class="section-title">Contact Me</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-card glass-card">
+          <div class="contact-icon">📧</div>
+          <div>
+            <p class="contact-label">Email</p>
+            <a href="mailto:mwanikidesmon@gmail.com">mwanikidesmon@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-card glass-card">
+          <div class="contact-icon">📞</div>
+          <div>
+            <p class="contact-label">Phone</p>
+            <a href="tel:0748909698">0748909698</a>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form glass-card">
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="5" placeholder="Write your message here..."></textarea>
+        </div>
+        <button class="btn-submit">
+          Send Message <span class="btn-icon">🚀</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-content">
+    <p>© 2026 Desmond Mwaniki. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
